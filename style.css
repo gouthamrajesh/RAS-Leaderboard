@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./bg.png');
+    background-color:#7a5656;
+    background-size:20%;
+    animation: bgScroll 20s linear infinite;
+  }
+  
+  @keyframes bgScroll {
+    0% {
+      background-position : 0px 0px
+    }
+    100% {
+      background-position : 0px -808px
+    }
+  }
+.leaderBoard-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.leader-board {
+    width: 500px;
+	height: auto;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	overflow: hidden;
+  margin-top: 100px;
+}
+#change
+{
+  padding-top: 100px;
+  background-color: transparent;
+  padding-bottom: 50px;
+}
+.heading{
+    background: #cebcbc;
+    color: rgb(128, 53, 53);
+    padding: 20px;
+    text-align: center;
+    bottom: auto;
+}
+.persons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px 15px 25px;
+    /* default color if no color assigned using code leader-board .persons:nth-child(n){color:#xxx;} */
+    background: #818181; 
+}
+.persons h1{
+    font-size: 19px;
+    color: rgb(3, 3, 3);
+}
+.leader-board .persons {
+	background: coral;
+}
+
+@media only screen and (max-width: 600px) {
+    .leader-board {
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        overflow: hidden;
+    }
+    #change
+    {
+      padding-top: 200px;
+      background-color: transparent;
+      padding-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 230px) {
+  .leader-board {
+      width: 80%;
+      height: auto;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      overflow: hidden;
+  }
+  @media only screen and (max-width: 600px) {
+    .leader-board {
+        width: 95%;
+        height: auto;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        overflow: hidden;
+    }
+    #change
+    {
+      padding-top: 300px;
+      background-color: transparent;
+      padding-bottom: 50px;
+    }
+}
+}
